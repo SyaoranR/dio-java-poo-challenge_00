@@ -20,11 +20,12 @@ public class Curso extends Conteudo{
         this.cargaHoraria = cargaHoraria;
     }
 
+
     @Override
     public String toString() {
-        return "Curso{" + "titulo = '" + getTitulo() + '\'' + ", descricao = '" +
-            getDescricao() + '\'' + ", cargaHoraria = " + cargaHoraria + '}';
-        /* 
+        return " Curso {" + " Título = '" + getTitulo() + '\'' + ", Descrição = '" +
+            getDescricao() + '\'' + ", Carga Horaria = '" + cargaHoraria + " horas' }";
+        /*
         StringBuilder sb = new StringBuilder();
         sb.append("Curso{");
         sb.append("titulo=").append(titulo);
@@ -33,6 +34,14 @@ public class Curso extends Conteudo{
         sb.append('}');
         return sb.toString();
         */
+    }
+
+    public void imprimirDados() {
+    //  System.out.println("-----------------------Curso(s)----------------------------------------");
+        System.out.println("Nome do Curso: " + this.getTitulo());
+        System.out.println("Descrição do Curso: " + this.getDescricao());
+        System.out.println("Carga Horaria: " + this.getCargaHoraria());
+        System.out.println("-----------------------------------------------------------------------");
     }
 
 }

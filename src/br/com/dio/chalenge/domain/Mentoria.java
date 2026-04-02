@@ -22,10 +22,11 @@ public class Mentoria extends Conteudo {
         this.data = data;
     }
 
+
     @Override
     public String toString() {
-        return "Mentoria{" + "titulo = '" + getTitulo() + '\'' + ", descricao = '" +
-            getDescricao() + '\'' + ", data = " + data + '}';
+        return " Mentoria {" + " Título = '" + getTitulo() + '\'' + ", Descrição = '" +
+            getDescricao() + '\'' + ", Data = '" + data + "' }";
         /*
         StringBuilder sb = new StringBuilder();
         sb.append("Mentoria{");
@@ -35,6 +36,14 @@ public class Mentoria extends Conteudo {
         sb.append('}');
         return sb.toString();
         */
+    }
+
+    public void imprimirDados() {
+        //System.out.println("---------------------Mentoria(s)----------------------------------------");
+        System.out.println("Nome da Mentoria: " + this.getTitulo());
+        System.out.println("Descrição da Mentoria: " + this.getDescricao());
+        System.out.println("Data: " + this.getData());
+        System.out.println("-----------------------------------------------------------------------");
     }
 
 }
